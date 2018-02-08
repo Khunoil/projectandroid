@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg02"
+    android:fillViewport="true"
+    android:orientation="horizontal"
+    tools:context="com.example.oil.finalandroid.RegisterActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/regis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Registration"
+            android:textColor="#5D4037"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.03"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/codecard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#FFF8E1"
+            android:fontFamily="sans-serif"
+            android:gravity="left"
+            android:hint="ID No."
+            android:inputType="number"
+            android:maxLength="13"
+            android:padding="7dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/guidebuttomfirstname"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guidebuttomcodecard"
+            app:layout_constraintVertical_bias="0.2"
+            tools:layout_editor_absoluteX="15dp" />
+
+        <EditText
+            android:id="@+id/firstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#FFF8E1"
+            android:fontFamily="sans-serif"
+            android:gravity="left"
+            android:hint="First Name"
+            android:inputType="text"
+            android:padding="7dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/guidebuttomlastname"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guidebuttomfirstname"
+            app:layout_constraintVertical_bias="0.2" />
+
+        <EditText
+            android:id="@+id/lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#FFF8E1"
+            android:fontFamily="sans-serif"
+            android:gravity="left"
+            android:hint="Last Name"
+            android:inputType="text"
+            android:padding="7dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/guidebuttompassword"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guidebuttomlastname"
+            app:layout_constraintVertical_bias="0.3" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#FFF8E1"
+            android:fontFamily="sans-serif"
+            android:gravity="left"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="7dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/guidebuttomemail"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guidebuttompassword"
+            app:layout_constraintVertical_bias="0.4" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#FFF8E1"
+            android:fontFamily="sans-serif"
+            android:gravity="left"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="7dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/guidebuttomphone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guidebuttomemail"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#FFF8E1"
+            android:fontFamily="sans-serif"
+            android:gravity="left"
+            android:hint="Mobile Phone"
+            android:inputType="phone"
+            android:padding="7dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/guidebuttomcarbrand"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guidebuttomphone"
+            app:layout_constraintVertical_bias="0.6" />
+
+        <EditText
+            android:id="@+id/licenseplate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#FFF8E1"
+            android:fontFamily="sans-serif"
+            android:gravity="left"
+            android:hint="License"
+            android:inputType="text"
+            android:padding="7dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/guidebuttomcarcolor"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="@+id/guidecenter"
+            app:layout_constraintTop_toBottomOf="@+id/guidebuttomcarbrand"
+            app:layout_constraintVertical_bias="0.7" />
+
+        <Spinner
+            android:id="@+id/carbrand"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:entries="@array/carbrand"
+            android:fontFamily="sans-serif"
+            android:gravity="left"
+            android:hint="Car brand"
+            android:inputType="text"
+            android:padding="7dp"
+            android:spinnerMode="dropdown"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/guidebuttomcarcolor"
+            app:layout_constraintLeft_toRightOf="@+id/licenseplate"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guidebuttomcarbrand"
+            app:layout_constraintVertical_bias="0.7" />
+
+        <Spinner
+            android:id="@+id/carcolor"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:entries="@array/carcolor"
+            android:fontFamily="sans-serif"
+            android:gravity="left"
+            android:hint="Car color"
+            android:inputType="text"
+            android:padding="7dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/guidebuttomlicense"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="@+id/guidecenter"
+            app:layout_constraintTop_toBottomOf="@+id/guidebuttomcarcolor"
+            app:layout_constraintVertical_bias="0.8" />
+
+        <Spinner
+            android:id="@+id/country"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:entries="@array/country"
+            android:fontFamily="sans-serif"
+            android:gravity="left"
+            android:hint="Country"
+            android:inputType="text"
+            android:padding="7dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/guidebuttomlicense"
+            app:layout_constraintLeft_toRightOf="@+id/licenseplate"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guidebuttomcarcolor"
+            app:layout_constraintVertical_bias="0.8" />
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_background_signup"
+            android:text="Sign up"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintBottom_toTopOf="@+id/guidebuttomsignup"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/guidebuttomlicense"
+            app:layout_constraintVertical_bias="0.40" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidebuttomcodecard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="50dp" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidebuttomfirstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="100dp" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidebuttomlastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="150dp" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidebuttompassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="200dp" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidebuttomemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="250dp" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidebuttomphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="300dp" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidebuttomcarbrand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="350dp" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidebuttomcarcolor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="400dp" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidebuttomlicense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="450dp" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidebuttomcountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="500dp" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidebuttomsignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="550dp" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidecenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
